@@ -6,7 +6,7 @@ function Pizza(size, sauce, top1, top2, top3, top4,
 	top9,
 	top10
 ) {
-	this.cost = 15;
+	this.cost = 10;
 	this.size = size;
 	this.sauce = sauce;
 	this.top1 = top1;
@@ -26,11 +26,11 @@ Pizza.prototype.changePrice = function () {
 	} else if (this.size === 'Small') {
 		this.cost += 2;
 	} else if (this.size === 'Medium') {
-		this.cost += 4;
+		this.cost += 3;
 	} else if (this.size === 'Large') {
-		this.cost += 6;
+		this.cost += 4;
 	} else if (this.size === 'Family') {
-		this.cost += 8;
+		this.cost += 5;
 	}
 };
 
@@ -162,5 +162,5 @@ Pizza.prototype.toppingVisible = function () {
 	if (this.top10 !== 'on') {
 		$('#top10').hide();
 	}
-  };
+};
 $();
