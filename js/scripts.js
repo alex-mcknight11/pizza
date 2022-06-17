@@ -84,8 +84,8 @@ Pizza.prototype.changeTopping = function () {
 
 function finalPizzaOrder(pizzaOrder) {
 	$('#pizza-cost').show();
-	$('#pizza-size').html(pizzaOrder.size);
-	$('#pizza-sauce').html(pizzaOrder.sauce);
+	$('#pizza-size').text(pizzaOrder.size);
+	$('#pizza-sauce').text(pizzaOrder.sauce);
 	// $('#top1').html(pizzaOrder.top1);
 	// $('#top2').html(pizzaOrder.top2);
 	// $('#top3').html(pizzaOrder.top3);
@@ -96,7 +96,7 @@ function finalPizzaOrder(pizzaOrder) {
 	// $('#top8').html(pizzaOrder.top8);
 	// $('#top9').html(pizzaOrder.top9);
 	// $('#top10').html(pizzaOrder.top10);
-	$('.cost').html(pizzaOrder.price);
+	$('.cost').text(pizzaOrder.price);
 }
 
 $(document).ready(function () {
@@ -142,33 +142,63 @@ $(document).ready(function () {
 Pizza.prototype.toppingVisible = function () {
 	if (this.top1 !== 'on') {
 		$('#top1').hide();
-	}
+	} 
+  else {
+		$('#top1').show();
+	} 
 	if (this.top2 !== 'on') {
 		$('#top2').hide();
 	}
+  else {
+		$('#top2').show();
+	} 
 	if (this.top3 !== 'on') {
 		$('#top3').hide();
 	}
+  else {
+		$('#top3').show();
+	} 
 	if (this.top4 !== 'on') {
 		$('#top4').hide();
 	}
+  else {
+		$('#top4').show();
+	} 
 	if (this.top5 !== 'on') {
 		$('#top5').hide();
 	}
+  else {
+		$('#top5').show();
+	} 
 	if (this.top6 !== 'on') {
 		$('#top6').hide();
 	}
+  else {
+		$('#top6').show();
+	} 
 	if (this.top7 !== 'on') {
 		$('#top7').hide();
 	}
+  else {
+		$('#top7').show();
+	} 
 	if (this.top8 !== 'on') {
 		$('#top8').hide();
 	}
+  else {
+		$('#top8').show();
+	} 
 	if (this.top9 !== 'on') {
 		$('#top9').hide();
 	}
+  else {
+		$('#top9').show();
+	} 
 	if (this.top10 !== 'on') {
 		$('#top10').hide();
 	}
+  else {
+		$('#top10').show();
+	} 
 };
 $();
