@@ -93,3 +93,8 @@ function finalPizzaOrder(pizzaOrder) {
 	$('#top10').html(pizzaOrder.top10);
 	$('.cost').html(pizzaOrder.price);
 }
+
+$(document).ready(function () {
+	$('#finalOrderReadout').hide();
+	$('form#pizzaOrder').submit(function (event) {
+		event.preventDefault();
