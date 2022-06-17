@@ -98,3 +98,35 @@ $(document).ready(function () {
 	$('#finalOrderReadout').hide();
 	$('form#pizzaOrder').submit(function (event) {
 		event.preventDefault();
+		let pizzaSize = $('select#sizeSelect').val();
+		let pizzaSauce = $('select#sauceSelect').val();
+		let pizzaTop1 = $('input:checkbox[name=top1]:checked').val();
+		let pizzaTop2 = $('input:checkbox[name=top2]:checked').val();
+		let pizzaTop3 = $('input:checkbox[name=top3]:checked').val();
+		let pizzaTop4 = $('input:checkbox[name=top4]:checked').val();
+		let pizzaTop5 = $('input:checkbox[name=top5]:checked').val();
+		let pizzaTop6 = $('input:checkbox[name=top6]:checked').val();
+		let pizzaTop7 = $('input:checkbox[name=top7]:checked').val();
+		let pizzaTop8 = $('input:checkbox[name=top8]:checked').val();
+		let pizzaTop9 = $('input:checkbox[name=top9]:checked').val();
+		let pizzaTop10 = $('input:checkbox[name=top10]:checked').val();
+		let pizzaOrder = new Pizza(
+			pizzaSize,
+			pizzaSauce,
+			pizzaTop1,
+			pizzaTop2,
+			pizzaTop3,
+			pizzaTop4,
+			pizzaTop5,
+			pizzaTop6,
+			pizzaTop7,
+			pizzaTop8,
+			pizzaTop9,
+			pizzaTop10
+		);
+		pizzaOrder.changePrice();
+		pizzaOrder.toppingVisible();
+		console.log(pizzaOrder);
+		$('#finalOrderReadout').show();
+	});
+});
