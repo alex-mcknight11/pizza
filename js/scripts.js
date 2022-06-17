@@ -76,3 +76,20 @@ Pizza.prototype.changeTopping = function () {
 		this.price += 1;
 	}
 };
+
+function finalPizzaOrder(pizzaOrder) {
+	$('#pizza-cost').show();
+	$('#pizza-size').html(pizzaOrder.size);
+	$('#pizza-sauce').html(pizzaOrder.sauce);
+	$('#top1').html(pizzaOrder.top1);
+	$('#top2').html(pizzaOrder.top2);
+	$('#top3').html(pizzaOrder.top3);
+	$('#top4').html(pizzaOrder.top4);
+	$('#top5').html(pizzaOrder.top5);
+	$('#top6').html(pizzaOrder.top6);
+	$('#top7').html(pizzaOrder.top7);
+	$('#top8').html(pizzaOrder.top8);
+	$('#top9').html(pizzaOrder.top9);
+	$('#top10').html(pizzaOrder.top10);
+	$('.cost').html(pizzaOrder.price);
+}
