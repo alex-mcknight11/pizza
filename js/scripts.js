@@ -130,3 +130,37 @@ $(document).ready(function () {
 		$('#finalOrderReadout').show();
 	});
 });
+
+Pizza.prototype.toppingVisible = function () {
+	if (this.top1 !== 'on') {
+		$('#top1').hide();
+	}
+	if (this.top2 !== 'on') {
+		$('#top2').hide();
+	}
+	if (this.top3 !== 'on') {
+		$('#top3').hide();
+	}
+	if (this.top4 !== 'on') {
+		$('#top4').hide();
+	}
+	if (this.top5 !== 'on') {
+		$('#top5').hide();
+	}
+	if (this.top6 !== 'on') {
+		$('#top6').hide();
+	}
+	if (this.top7 !== 'on') {
+		$('#top7').hide();
+	}
+	if (this.top8 !== 'on') {
+		$('#top8').hide();
+	}
+	if (this.top9 !== 'on') {
+		$('#top9').hide();
+	}
+	if (this.top10 !== 'on') {
+		$('#top10').hide();
+	}
+  };
+$();
