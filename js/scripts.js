@@ -51,34 +51,34 @@ Pizza.prototype.changeSauce = function () {
 
 Pizza.prototype.changeTopping = function () {
 	if (this.top1 === 'Pepperoni') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top2 === 'Mushrooms') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top3 === 'Sausage') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top4 === 'Onions') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top5 === 'Bell Peppers') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top6 === 'Anchovies') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top7 === 'Pineapple') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top8 === 'Ham') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top9 === 'Basil') {
-		this.price += 1;
+		this.cost += 1;
 	}
 	if (this.top10 === 'Artichoke') {
-		this.price += 1;
+		this.cost += 1;
 	}
 };
 
@@ -86,18 +86,11 @@ function finalPizzaOrder(pizzaOrder) {
 	$('#pizza-cost').show();
 	$('#pizza-size').text(pizzaOrder.size);
 	$('#pizza-sauce').text(pizzaOrder.sauce);
-	// $('#top1').html(pizzaOrder.top1);
-	// $('#top2').html(pizzaOrder.top2);
-	// $('#top3').html(pizzaOrder.top3);
-	// $('#top4').html(pizzaOrder.top4);
-	// $('#top5').html(pizzaOrder.top5);
-	// $('#top6').html(pizzaOrder.top6);
-	// $('#top7').html(pizzaOrder.top7);
-	// $('#top8').html(pizzaOrder.top8);
-	// $('#top9').html(pizzaOrder.top9);
-	// $('#top10').html(pizzaOrder.top10);
-	$('.cost').text(pizzaOrder.price);
+	console.log('hello');
+	$('#cost').text(pizzaOrder.cost);
 }
+
+
 
 $(document).ready(function () {
 	$('#finalOrderReadout').hide();
@@ -200,5 +193,6 @@ Pizza.prototype.toppingVisible = function () {
   else {
 		$('#top10').show();
 	} 
+
 };
 $();
